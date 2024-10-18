@@ -1,0 +1,90 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+#user {
+  margin-top: 50px;
+  margin-left: 20px;
+  font-style: italic;
+}
+
+.main-section {
+  width: 600px;
+  margin-left: 600px;
+  margin-top: -70px;
+}
+
+input {
+  height: 40px;
+  width: 350px;
+}
+
+#nameh {
+  margin-top: 0px;
+}
+
+#emailh {
+  margin-top: 5px;
+}
+
+#phoneh {
+  margin-top: 5px;
+}
+
+#dobh {
+  margin-top: 5px;
+}
+
+#ageh {
+  margin-top: 5px;
+}
+
+.dropdown {
+  margin-top: 5px;
+}
+
+#gender {
+  height: 40px;
+  width: 350px;
+}
+
+label {
+  font-size: 16px;
+}
+
+select {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+select:hover {
+  border-color: #888;
+}
+
+#passwordh {
+  margin-top: 5px;
+}
+
+#confirmPasswordh {
+  margin-top: 5px;
+}
+
+#addressh {
+  margin-top: 5px;
+}
+
+#cityh {
+  margin-top: 5px;
+}
+
+#submit {
+  height: 30px;
+  width: 100px;
+  margin-top: 10px;
+}

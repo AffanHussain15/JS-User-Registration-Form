@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS User Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="user">
+        <h1>User Registration Form</h1>
+    </div>
+    <div class="main-section">
+        <form onsubmit="checkname('name');">
+            <h3 id="nameh">Name:</h3>
+            <input type="text" id="name" placeholder="Enter Your Name">
+        </form>
+
+        <form onSubmit="checkemail('email');">
+            <h3 id="emailh">Email:</h3>
+            <input type="email" id="email" placeholder="Enter Your Email">
+        </form>
+
+        <form onSubmit="return checkPhoneNumber('phone');">
+            <h3 id="phoneh">Phone Number:</h3>
+            <input type="text" id="phone" placeholder="Enter 10 digit phone number">
+        </form>
+
+        <form onSubmit="return checkDOB('birth');">
+            <h3 id="dobh">Date Of Birth:</h3>
+            <input type="date" id="dob" placeholder="Enter Your Date of Birth">
+        </form>
+
+        <form onSubmit="return checkAge('age');" autocomplete="off">
+            <h3 id="ageh">Age:</h3>
+            <input type="number" id="age" placeholder="Enter your age" autocomplete="off" min="1" max="120">
+        </form>
+
+        <div class="dropdown">
+            <label for="gender"><h3>Enter Your Gender.</h3></label>
+            <select id="gender" name="gender">
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <form onSubmit="return checkPassword();" autocomplete="off">
+            <h3 id="passwordh">Password:</h3>
+            <input type="password" id="password" placeholder="Enter your password" autocomplete="off">
+            <h3 id="confirmPasswordh">Confirm Password:</h3>
+            <input type="password" id="confirmPassword" placeholder="Confirm your password" autocomplete="off">
+        </form>
+
+        <form onSubmit="return checkAddress();" autocomplete="off">
+            <h3 id="addressh">Address:</h3>
+            <input type="text" id="address" placeholder="Enter your address" autocomplete="off">
+            <br>
+        </form>
+
+        <form onSubmit="return checkCity();" autocomplete="off">
+            <h3 id="cityh">City:</h3>
+            <input type="text" id="city" placeholder="Enter your city" autocomplete="off">
+        </form>
+
+        <button type="submit" value="submit" id="submit" onclick="checkname('name');checkemail('email');checkPhoneNumber('phone');
+        checkDOB('dob');checkAge('age');checkPassword();checkAddress();checkCity();" >Submit</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
